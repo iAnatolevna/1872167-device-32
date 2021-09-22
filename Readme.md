@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Наталья Задворная](https://up.htmlacademy.ru/htmlcss/32/user/1872167).
-* Наставник: [Алексей Елькин](https://htmlacademy.ru/profile/alex_elkin).
+* Студент: [Наталья Анатольевна Задворная](https://up.htmlacademy.ru/htmlcss/32/user/1872167).
+* Наставник: [Алексей Викторович Елькин](https://htmlacademy.ru/profile/alex_elkin).
 
 ---
 
