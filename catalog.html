@@ -133,14 +133,14 @@
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="product-group" value="bluetooth-yes" checked>
                   <span class="control-mark"></span>
-                  <span class="control-label">Черный</span>
+                  <span class="control-label">Есть</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="visually-hidden control-input" type="radio" name="product-group" value="bluetooth-no" >
                   <span class="control-mark"></span>
-                  <span class="control-label">Белый</span>
+                  <span class="control-label">Нет</span>
                 </label>
               </li>
             </ul>
@@ -149,13 +149,15 @@
           <button class="button" type="submit">Показать</button>
         </form>
 
-        <form class="sorting-type">
-          <h3 class="sorting-type-title">Сортировка:</h3>
-          <select class="select-control" id="sorting" name="sorting">
-            <option value="popular">Сначала популярные</option>
-            </select>
-          <button class="visually-hidden" type="submit">Отсортировать товары</button>
-        </form>
+        <div class="sorting-type">
+          <form class="sorting-type-form">
+            <h3 class="sorting-type-title">Сортировка:</h3>
+            <select class="select-control" id="sorting" name="sorting">
+              <option value="popular">Сначала популярные</option>
+              </select>
+            <button class="visually-hidden" type="submit">Отсортировать товары</button>
+          </form>
+        </div>
 
         <a href="#" class="button button-sorting">
           <span class="visually-hidden">от минимального</span>
