@@ -1,0 +1,101 @@
+
+.page-header {
+    background: #FFE17F;
+}
+
+.services {
+    background: #F0F0F0;
+}
+
+.mail {
+    background: #F0F0F0;
+}
+
+.page-footer {
+    background: #444444;
+}
+
+.catalog-products-title {
+    background: #DCDCDC;
+}
+
+.catalog-filter {
+    background: #E5E5E5;
+}
+
+.sorting-type {
+    background: #EBEBEB;
+}
+
+.catalog-image1 {
+    width: 160px;
+    height: 160px;
+    background-color: #FFE17F;
+    background-image: url("../images/categories/popular-1-virtual-reality.svg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.catalog-image2 {
+    width: 160px;
+    height: 160px;
+    background-color: #FFE17F;
+    background-image: url("../images/categories/popular-2-monopods.svg"); 
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+
+.catalog-image3 {
+    width: 160px;
+    height: 160px;
+    background-color: #FFE17F;
+    background-image: url("../images/categories/popular-3-action-cameras.svg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.catalog-image4 {
+    width: 160px;
+    height: 160px;
+    background-color: #FFE17F;
+    background-image: url("../images/categories/popular-4-fitness-bracelets.svg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.catalog-image5 {
+    width: 160px;
+    height: 160px;
+    background-color: #FFE17F;
+    background-image: url("../images/categories/popular-5-smart-watch.svg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.catalog-image6 {
+    width: 160px;
+    height: 160px;
+    background-color: #FFE17F;
+    background-image: url("../images/categories/popular-6-quadrocopters.svg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.services-image1 {
+    width: 136px;
+    height: 164px;
+    background-image: url("../images/services-img/delivery.svg");
+}
+
+.services-image2 {
+    width: 171px;
+    height: 195px;
+    background-image: url("../images/services-img/warranty.svg");
+}
+
+.services-image3 {
+    width: 156px;
+    height: 188px;
+    background-image: url("../images/services-img/credit.svg");
+}

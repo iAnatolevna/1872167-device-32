@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="header-logo-link" href="https://htmlacademy.ru/">
-        <img class="header-logo" src="" alt="логотип магазина Девайс">
+      <a class="header-logo-link" href="#" aria-current="page">
+        <img class="header-logo" src="images/device-logo.svg" width="145" height="36" alt="логотип магазина Девайс">
       </a>
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
         <label for="search-label">
-          <img src="" alt="поиск">
+          <span class="visually-hidden">Поиск</span>
         </label>
         <input class="search-input" type="text" id="search-label"  name="search-input" placeholder="Поиск по сайту">
         <button class="button search-button" type="submit">Найти</button>
@@ -58,7 +59,7 @@
         </button>
 
         <div class="main-slider-n1">
-          <img class="slider-image" src="" alt="квадрокоптер">
+          <img class="slider-image" src="images/slider/slider-1-quadcopter.png" width="560" height="560" alt="квадрокоптер">
           <p class="slider-phrase">Порхает как бабочка, жалит как пчела!</p>
           <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
           <a class="slider-link" href="#">Подробнее</a>
@@ -79,7 +80,7 @@
         </div>
 
         <div class="main-slider-n2">
-          <img class="slider-image" src="" alt="фитнес-браслет">
+          <img class="slider-image" src="images/slider/slider-2-watch.png" width="560" height="560" alt="фитнес-браслет">
           <p class="slider-phrase">Худеем правильно!</p>
           <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
           <a class="slider-link" href="#">Подробнее</a>
@@ -100,7 +101,7 @@
         </div>
 
         <div class="main-slider-n3">
-          <img class="slider-image" src="" alt="палки для селфи">
+          <img class="slider-image" src="images/slider/slider-3-selfie-stick.png" width="560" height="560" alt="палки для селфи">
           <p class="slider-phrase">Делай селфи, как Бен Стиллер! </p>
           <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
           <a class="slider-link" href="#">Подробнее</a>
@@ -144,31 +145,37 @@
         <ul class="catalog-navigation-list">
           <li class="catalog-navigation-item">
             <a class="catalog-navigation-link" href="#">
+              <div class="catalog-image1"></div>
              <h3 class="catalog-navigation-subtitle">Виртуальная реальность</h3>
             </a>
           </li>
           <li class="catalog-navigation-item">
             <a class="catalog-navigation-link" href="#">
+              <div class="catalog-image2"></div>
               <h3 class="catalog-navigation-subtitle">Моноподы для cелфи</h3>
             </a>
           </li>
           <li class="catalog-navigation-item">
             <a class="catalog-navigation-link" href="#">
+              <div class="catalog-image3"></div>
               <h3 class="catalog-navigation-subtitle">Экшн-камеры</h3>
             </a>
           </li>
           <li class="catalog-navigation-item">
             <a class="catalog-navigation-link" href="#">
+              <div class="catalog-image4"></div>
               <h3 class="catalog-navigation-subtitle">Фитнес-браслеты</h3>
             </a>
           </li>
           <li class="catalog-navigation-item">
             <a class="catalog-navigation-link" href="#">
+              <div class="catalog-image5"></div>
               <h3 class="catalog-navigation-subtitle">Умные часы</h3>
             </a>
           </li>
           <li class="catalog-navigation-item">
             <a class="catalog-navigation-link" href="#">
+              <div class="catalog-image6"></div>
               <h3 class="catalog-navigation-subtitle">Квадрокоптеры</h3>
             </a>
           </li>
@@ -191,17 +198,17 @@
         <div class="services-slide services-slide-delivery">
           <h3 class="services-title">Доставка</h3>
           <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          <img class="services-image" src="" alt="курьер с посылкой">
+          <div class="services-image1"></div>
         </div>
         <div class="services-slide services-slide-guarantee">
           <h3 class="services-title">Гарантия</h3>
           <p class="services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-          <img class="services-image" src="" alt="телефонная трубка и инструменты">
+          <div class="services-image2"></div>
         </div>
         <div class="services-slide services-slide-credit">
           <h3 class="services-title">Кредит</h3>
           <p class="services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
-          <img class="services-image" src="" alt="человечек с кредитной картой">
+          <div class="services-image3"></div>
         </div>
       </section>
 
@@ -256,8 +263,8 @@
     </main>
 
     <footer class="page-footer">
-      <a class="footer-logo-link" href="https://htmlacademy.ru/"> 
-        <img class="footer-logo" src="" alt="логотип магазина Девайс">
+      <a class="footer-logo-link" href="#"> 
+        <img class="footer-logo" src="images/device-logo.svg" width="145" height="36" alt="логотип магазина Девайс">
       </a>
       <address class="footer-address">
         <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -292,7 +299,7 @@
         </li>
       </ul>
       <a class="footer-link" href="https://htmlacademy.ru/">
-        <img src="" alt="htmlacademy">
+        <img src="images/icons/logo_htmlacademy.svg" width="115" height="33" alt="htmlacademy">
       </a>
     </footer>
 
