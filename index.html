@@ -7,43 +7,45 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="header-logo-link" href="#" aria-current="page">
-        <img class="header-logo" src="images/device-logo.svg" width="145" height="36" alt="логотип магазина Девайс">
-      </a>
-      <div class="nav-wrapper">
-        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="search-label">
-            <span class="visually-hidden">Поиск</span>
-          </label>
-          <input class="search-input" type="text" id="search-label"  name="search-input" placeholder="Поиск по сайту">
-          <button class="search-button" type="submit">Найти</button>
-        </form>
-        <ul class="main-navigation-user">
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Войти</a>
+      <div class="page-container">
+        <a class="header-logo-link" href="#" aria-current="page">
+          <img class="header-logo" src="images/device-logo.svg" width="145" height="36" alt="логотип магазина Девайс">
+        </a>
+        <div class="nav-wrapper">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="search-label">
+              <span class="visually-hidden">Поиск</span>
+            </label>
+            <input class="search-input" type="text" id="search-label"  name="search-input" placeholder="Поиск по сайту">
+            <button class="search-button" type="submit">Найти</button>
+          </form>
+          <ul class="main-navigation-user">
+            <li class="main-navigation-item">
+              <a class="navigation-user-link" href="#">Войти</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="navigation-user-link" href="#">Сравнить</a>
+            </li>
+            <li class="main-navigation-item">
+              <a class="navigation-user-link" href="#">Корзина</a>
+            </li>
+          </ul> 
+        </div>
+        <ul class="main-navigation-list">
+          <li class="main-navigation-item dropdown-catalog">
+            <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Сравнить</a>
+            <a class="main-navigation-link" href="#">Доставка</a>
           </li>
           <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Корзина</a>
+            <a class="main-navigation-link" href="#">Гарантия</a>
           </li>
-        </ul> 
+          <li class="main-navigation-item">
+            <a class="main-navigation-link" href="#">Контакты</a>
+          </li>
+        </ul>
       </div>
-      <ul class="main-navigation-list">
-        <li class="main-navigation-item dropdown-catalog">
-          <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Доставка</a>
-        </li>
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Гарантия</a>
-        </li>
-        <li class="main-navigation-item">
-          <a class="main-navigation-link" href="#">Контакты</a>
-        </li>
-      </ul>
     </header>
 
     <main class="main-container">
