@@ -96,7 +96,7 @@ body {
 
 .search-form {
     padding-left: 60px;
-    width: 540px;
+    width: 516px;
     line-height: 19px;
 }
 
@@ -114,6 +114,7 @@ body {
 }
 
 .main-navigation-user {
+    width: 560px;
     line-height: 19px; 
     margin: 0;
     padding: 0;
@@ -155,6 +156,7 @@ body {
 
 .nav-wrapper {
     display: flex;
+    justify-content: space-between;
 }
 
 /* footer */
