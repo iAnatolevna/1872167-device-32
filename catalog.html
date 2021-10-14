@@ -7,45 +7,48 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-container">
-        <a class="header-logo-link" href="index.html" aria-current="page">
-          <img class="header-logo" src="images/device-logo.svg" width="145" height="36" alt="логотип магазина Девайс">
-        </a>
+      <a class="header-logo-link" href="index.html" aria-current="page">
+        <img class="header-logo" src="images/device-logo.svg" width="145" height="36" alt="логотип магазина Девайс">
+      </a>
+      <div class="page-header-wrapper">
         <div class="nav-wrapper">
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="search-label">
-              <span class="visually-hidden">Поиск</span>
-            </label>
-            <input class="search-input" type="text" id="search-label"  name="search-input" placeholder="Поиск по сайту">
-            <button class="search-button" type="submit">Найти</button>
-          </form>
-          <ul class="main-navigation-user">
-            <li class="main-navigation-item">
-              <a class="navigation-user-link" href="#">Войти</a>
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label for="search-label">
+                <span class="visually-hidden">Поиск</span>
+              </label>
+              <input class="search-input" type="text" id="search-label"  name="search-input" placeholder="Поиск по сайту">
+              <button class="search-button visually-hidden" type="submit">Найти</button>
+            </form>
+            <ul class="main-navigation-user">
+              <li class="main-navigation-user-item nav-user">
+                <a class="navigation-user-link" href="#">Войти</a>
+              </li>
+              <li class="main-navigation-user-item nav-compare">
+                <a class="navigation-user-link" href="#">Сравнить</a>
+              </li>
+              <li class="main-navigation-user-item nav-cart">
+                <a class="navigation-user-link" href="#">Корзина</a>
+              </li>
+            </ul> 
+          </div>
+          <ul class="main-navigation-list">
+            <li class="dropdown-catalog">
+              <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="main-navigation-item">
-              <a class="navigation-user-link" href="#">Сравнить</a>
+            <li class="main-nav-item">
+              <ul class="main-nav-list">
+                <li class="main-navigation-item">
+                  <a class="main-navigation-link" href="#">Доставка</a>
+                </li>
+                <li class="main-navigation-item">
+                  <a class="main-navigation-link" href="#">Гарантия</a>
+                </li>
+                <li class="main-navigation-item">
+                  <a class="main-navigation-link" href="#">Контакты</a>
+              </ul>
             </li>
-            <li class="main-navigation-item">
-              <a class="navigation-user-link" href="#">Корзина</a>
-            </li>
-          </ul> 
+          </ul>
         </div>
-        <ul class="main-navigation-list">
-          <li class="main-navigation-item dropdown-catalog">
-            <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Доставка</a>
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Гарантия</a>
-          </li>
-          <li class="main-navigation-item">
-            <a class="main-navigation-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
     </header>
 
     <main class="main-inner">
@@ -65,7 +68,7 @@
           </ul>
         </div>
       </header>
-
+<div class="wrapper-catalog">
       <section class="catalog-products page-container">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <div class="catalog-left-column">
@@ -165,12 +168,14 @@
               </select>
               <button class="visually-hidden" type="submit">Отсортировать товары</button>
             </form>
-            <a href="#" class="button-sorting">
-              <span class="visually-hidden">от минимального</span>
-            </a>
-            <a href="#" class="button-sorting">
-              <span class="visually-hidden">от максимального</span>
-            </a>
+            <div class="batton-sorting-wrapper">
+              <a href="#" class="button-sorting">
+                <span class="visually-hidden">от минимального</span>
+              </a>
+              <a href="#" class="button-sorting">
+                <span class="visually-hidden">от максимального</span>
+              </a>
+            </div>
           </div>
 
           <ul class="product-list">
@@ -210,8 +215,8 @@
 
           <button class="pagination-load-more catalog-title" type="button">Загрузить еще</button>
 
-          <ul class="pagination">
-            <li class="pagination-item">
+          <ul class="pagination-list">
+            <li class="pagination-item-back">
               <a class="pagination-link pagination-btn pagination-prev">
                 <span class="pagination-button">Назад</span>
               </a>
@@ -231,7 +236,7 @@
             <li class="pagination-item">
               <a class="pagination-link" href="#">15</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item-next">
               <a class="pagination-link pagination-btn pagination-next" href="#">
                 <span class="pagination-button">Вперед</span>
               </a>
@@ -239,6 +244,7 @@
           </ul>
         </div>
       </section>
+</div>
     </main>
 
     <footer class="page-footer">
@@ -252,7 +258,7 @@
           <address class="footer-address">
             <p class="footer-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           </address>
-          <ul class="footer-navigation-list page-navigation-list">
+          <ul class="footer-navigation-list">
             <li class="footer-navigation-item">
               <a class="footer-navigation-link" href="#">Доставка</a>
             </li>
@@ -267,7 +273,7 @@
             <a class="footer-phone" href="tel:88128121212">Тел.: +7 (812) 812-12-12</a>
           </address>
         </div>
-        <div class="footer-wrapper index-columns">
+        <div class="index-columns">
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="button" href="https://www.facebook.com/htmlacademy">
