@@ -71,8 +71,6 @@ body {
 .page-container{
     width: 1160px;
     margin:0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 .visually-hidden {
@@ -96,7 +94,11 @@ body {
 .page-header-wrapper {
     margin-top: -13px;
     background-color: #FFE17F;
-    padding-bottom: 45px;
+    padding-bottom: 12px;
+}
+
+.header-catalog{
+    padding-bottom: 48px;
 }
 
 .header-logo-link {
@@ -154,8 +156,7 @@ body {
 
 .nav-user {
     padding-left: 25px;
-    min-width: 220px;
-    
+    min-width: 220px;  
 }
 
 .nav-compare {
@@ -237,14 +238,21 @@ body {
   }
 
   .footer-wrapper {
-    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 250px auto 240px;
+    margin-bottom: 49px;
+  }
+
+  .footer-social-wrapper {
+    display: grid;
+    grid-template-columns: auto 240px;
   }
 
 .footer-logo-link {
     display: block;
     width: max-content;
     margin-top: 62px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 .page-footer a {
@@ -264,10 +272,14 @@ body {
     line-height: 19px;
 }
 
+.footer-phone-align {
+    justify-self:flex-end;
+}
+
 .footer-phone {
     padding: 10px 0;
     margin: 0;
-    line-height: 30px;    
+    line-height: 30px; 
 }
 
 .footer-navigation-list {
@@ -287,7 +299,7 @@ body {
 .footer-social-list {
     padding: 0;
     margin: 0;
-    margin-left: 337px;
+    margin-left: 250px;
     min-width: 500px;
     list-style-type: none; 
     display: flex;  
@@ -313,6 +325,10 @@ body {
     text-transform: uppercase;
 }
 
+.footer-link {
+    justify-self:flex-end;
+}
+
 .index-columns {
     display: flex;
     justify-content: space-between;
@@ -325,7 +341,7 @@ body {
 
 /*slider*/
 .main-slider {
-    margin-top: -36px;
+    margin-bottom: 70px;
 }
 
 .slider-wrapper-back {
@@ -342,6 +358,7 @@ body {
 .slider-description {
     margin: 0;
     padding: 0; 
+    padding-bottom: 4px;
     margin-bottom: 30px;
 }
 
@@ -356,13 +373,12 @@ body {
 .slider-advantages-list {
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 160px 160px 160px;
     list-style-type: none;   
 }
 
 .slider-advantages-item {
-    min-width: 160px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;   
@@ -393,7 +409,7 @@ body {
 
 /*navigation-catalog*/
 .navigation-catalog {
-    margin-bottom: 169px;
+    margin-bottom: 182px;
 }
 
 .navigation-catalog-item {
@@ -496,6 +512,7 @@ body {
 
 /* services */
 .services {
+    padding-bottom: 77px;
     background-color: #F0F0F0;
     margin-bottom: 90px;
 }
@@ -523,6 +540,7 @@ body {
 }
 
 .services-title {
+    padding-bottom: 20px;
     margin-top: -30px;
     margin-bottom: 14px;
     width: 560px;
@@ -561,14 +579,17 @@ body {
 
 /*delivery*/
 .delivery {
+    padding-top: 37px;
+    padding-bottom: 40px;
     display: flex;
     background: #F0F0F0;
     margin-bottom: 97px;;
 }
 
 .delivery-page-link {
-    padding-top: 37px;
-    padding-bottom: 43px;
+    margin-left: 125px;
+    margin-right: 52px;
+    width: 910px;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 20px;
@@ -580,29 +601,37 @@ body {
     text-decoration: none;
 }
 
-.main-info {
+/*about_us*/
+.about-contacts-wrapper {
     margin-bottom: 87px;
 }
 
-/*about_us*/
 .about_us {
-    max-width: 560px;
+    width: 560px;
+    display: flex;
+    flex-direction: column;
 }
 
 .about_us-title {
-    padding-top: 42px;
+    padding-top: 49px;
+    padding-bottom: 21px;
     margin-bottom: 26px;
 }
 
 .about_us-description {
     padding: 0;
+    padding-right: 63px;
     margin: 0;
     margin-bottom: 30px;
 }
 
 .about_us-list {
-    padding-top: 26px;
+    margin: 0;
     margin-bottom: 52px;
+    padding: 0;
+    padding-left: 34px;
+    padding-top: 44px;
+    list-style-type: none;
 }
 
 .about_us-item {
@@ -614,32 +643,66 @@ body {
     color: #000000;
 }
 
+.about_us-link {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+/*contacts*/
 .contacts {
     width: 560px;
+    display: flex;
+    flex-direction: column;
 }
 
 .contacts-title {
-    padding-top: 42px;
+    padding-top: 49px;
+    padding-bottom: 21px;
     margin-bottom: 26px;
 }
 
+.contacts-description{
+    padding: 0;
+    padding-right: 50px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
 .contacts-subtitle {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
     font-weight: 700;
     font-size: 24px;
 }
 
 .contacts-schedule-list {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
     list-style-type: none;
-}
+}    
+
 
 .contacts-address {
+    margin-bottom: 30px;
     font-style: normal;
     font-weight: 400;
     color: #444444;
 }
 
+.contacts-address-text {
+    padding: 0;
+    margin: 0;
+}
+
 .contacts-phone {
     color: #444444;  
+}
+
+.contacts-link{
+    align-self: flex-start;
+    margin-top: auto; 
 }
 
 /*mail*/
@@ -647,19 +710,29 @@ body {
     background-color: #F0F0F0;
 }
 
+.mail-wrapper {
+    padding-bottom: 60px;
+}
+
 .mail-title {
     padding: 0;
     margin: 0;
     padding-top: 75px;
-    margin-bottom: 50px;
     width: 560px;
 }
 
 .mail-description {
     padding: 0;
-    margin: 0;
+    margin: 0;    
     padding-top: 86px;
     width: 560px;
+}
+
+.mail-form {
+    display: grid;
+    grid-template-columns: 601px 260px;
+    grid-template-rows: 55px;
+    margin-bottom: 131px;
 }
 
 .mail-input {  
@@ -683,13 +756,13 @@ body {
 }
 
 .mail-profit {
-    margin-bottom: 131px;
+    padding-top: 14px;
 }
 
 /* catalog*/
 .inner-header {
     padding-top: 37px;
-    margin-bottom: 49px;
+    margin-bottom: 44px;
 }
 
 .inner-header-title {
