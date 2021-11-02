@@ -17,8 +17,9 @@
               <span class="visually-hidden">Поиск</span>
             </label>
             <input class="search-input" type="text" id="search-label"  name="search-input" placeholder="Поиск по сайту">
-            <button class="search-button visually-hidden" type="submit">Найти</button>
+            <button class="search-button" type="submit">Найти</button>
           </form>
+          
           <ul class="main-navigation-user">
             <li class="main-navigation-user-item main-navigation-user-login">
               <a class="navigation-user-link nav-user" href="#">Войти</a>
@@ -57,7 +58,7 @@
     <main class="main-container">
       <h1 class="visually-hidden">Магазин Девайc</h1>
       <section class="main-slider">
-        <div class="page-container page-position">
+        <div class="page-container page-position slider-wrap-all">
           <h2 class="visually-hidden">Слайдер популярные товары</h2> 
           <button class="slider-button slider-prev" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
@@ -65,7 +66,7 @@
           <button class="slider-button slider-next" type="button">
             <span class="visually-hidden">Следующий слайд</span>
           </button>
-          <div class="main-slider-n1 index-columns slider-wrapper-back">
+          <div class="main-slide index-columns slider-wrapper-back main-slide-active">
             <img class="slider-image" src="images/slider/slider-1-quadcopter.png" width="560" height="560" alt="квадрокоптер">
             <div class="slider-wrapper">
                 <p class="slider-phrase page-title">Порхает как бабочка, жалит как пчела!</p>
@@ -83,7 +84,7 @@
                 </ul>
             </div>
           </div>
-          <div class="main-slider-n2 index-columns slider-wrapper-back">
+          <div class="main-slide index-columns slider-wrapper-back">
             <img class="slider-image" src="images/slider/slider-2-watch.png" width="560" height="560" alt="фитнес-браслет">
             <div class="slider-wrapper">
               <p class="slider-phrase page-title">Худеем правильно!</p>
@@ -97,7 +98,7 @@
               </ul>
             </div>
           </div>
-          <div class="main-slider-n3 index-columns slider-wrapper-back">
+          <div class="main-slide index-columns slider-wrapper-back">
             <img class="slider-image" src="images/slider/slider-3-selfie-stick.png" width="560" height="560" alt="палки для селфи">
             <div class="slider-wrapper">
               <p class="slider-phrase page-title">Делай селфи, как Бен Стиллер! </p>
@@ -121,7 +122,7 @@
           </div>
 
           <ol class="slider-pagination">
-            <li class="slider-pagination-item">
+            <li class="slider-pagination-item page-position">
               <button class="slider-pagination-button" type="button">
                 <span class="visually-hidden">1 слайд</span>
               </button>
@@ -198,15 +199,15 @@
             </div>
 
             <div class="services-slides-wrapper">
-              <div class="services-slide services-slide-delivery">
-                <h3 class="services-title page-title services-image1">Доставка</h3>
+              <div class="services-slide services-slide-delivery services-slide-active">
+                <h3 class="services-title page-title services-image1 page-position">Доставка</h3>
                 <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
               </div>
               <div class="services-slide services-slide-guarantee">
-                <h3 class="services-title page-title services-image2">Гарантия</h3>
+                <h3 class="services-title page-title services-image2 page-position">Гарантия</h3>
                 <p class="services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
               </div>
-              <div class="services-slide services-slide-credit">
+              <div class="services-slide services-slide-credit page-position">
                 <h3 class="services-title page-title services-image3">Кредит</h3>
                 <p class="services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
               </div>
@@ -234,7 +235,7 @@
                 <li class="about_us-item">СДИК</li>
                 <li class="about_us-item">ТоксБерри</li>
               </ul> 
-              <a class="about_us-link button" href="#">Подробнее о нас</a>        
+              <a class="about_us-link button link-decor" href="#">Подробнее о нас</a>        
           </section>
 
           <section class="contacts">
@@ -250,7 +251,7 @@
                   <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
                   <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
                 </ul> 
-                <a class="contacts-link button" href="#">Напишите нам</a>  
+                <a class="contacts-link button link-decor" href="#">Напишите нам</a>  
           </section>
         </div>
 
