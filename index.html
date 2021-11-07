@@ -43,7 +43,7 @@
               <li class="main-navigation-item">
                 <a class="main-navigation-link" href="#">Доставка</a>
               </li>
-              <li class="main-navigation-item">
+              <li class="main-navigation-item nav-item-dop">
                 <a class="main-navigation-link" href="#">Гарантия</a>
               </li>
               <li class="main-navigation-item">
@@ -60,12 +60,14 @@
       <section class="main-slider">
         <div class="page-container page-position slider-wrap-all">
           <h2 class="visually-hidden">Слайдер популярные товары</h2> 
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущий слайд</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующий слайд</span>
-          </button>
+          <div class="slider-button-wrapper">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+          </div>
           <div class="main-slide index-columns slider-wrapper-back main-slide-active">
             <img class="slider-image" src="images/slider/slider-1-quadcopter.png" width="560" height="560" alt="квадрокоптер">
             <div class="slider-wrapper">
@@ -122,8 +124,8 @@
           </div>
 
           <ol class="slider-pagination">
-            <li class="slider-pagination-item page-position">
-              <button class="slider-pagination-button" type="button">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-active" type="button">
                 <span class="visually-hidden">1 слайд</span>
               </button>
             </li>
@@ -152,7 +154,7 @@
               </li>
               <li class="navigation-catalog-item">
                 <a class="navigation-catalog-link" href="catalog.html">
-                  <h3 class="navigation-catalog-subtitle navigation-catalog-image navigation-catalog-image--monopodds">Моноподы для cелфи</h3>
+                  <h3 class="navigation-catalog-subtitle navigation-catalog-image navigation-catalog-image--monopodds">Моноподы для&nbsp;cелфи</h3>
                 </a>
               </li>
               <li class="navigation-catalog-item">
@@ -200,15 +202,15 @@
 
             <div class="services-slides-wrapper">
               <div class="services-slide services-slide-delivery services-slide-active">
-                <h3 class="services-title page-title services-image-delivery page-position">Доставка</h3>
-                <p class="services-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                <h3 class="services-title page-title services-image-delivery">Доставка</h3>
+                <p class="services-description">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы&nbsp;неплохо заработаем, поднимая его на ваш этаж.</p>
               </div>
               <div class="services-slide services-slide-guarantee">
-                <h3 class="services-title page-title services-image-warranty page-position">Гарантия</h3>
+                <h3 class="services-title page-title services-image-warranty">Гарантия</h3>
                 <p class="services-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
               </div>
-              <div class="services-slide services-slide-credit page-position">
-                <h3 class="services-title page-title services-image-warranty">Кредит</h3>
+              <div class="services-slide services-slide-credit">
+                <h3 class="services-title page-title services-slide-credit">Кредит</h3>
                 <p class="services-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
               </div>
             </div>
@@ -259,11 +261,11 @@
           <div class="page-container">
             <div class="mail-wrapper index-columns">
               <h2 class="mail-title page-title">Подпишитесь <br>на рассылку</h2>
-              <p class="mail-description">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+              <p class="mail-description">Еженедельный дайджест с обзорами новинок, длительными&nbsp;тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
             </div>
             <div class="index-columns page-position">
               <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="mail-input" type="text" id="mail-data" name="mail-data" placeholder="Ваш e-mail">
+                <input class="mail-input" type="text" id="mail-data" name="mail-data" placeholder="Ваш e-mail" required>
                 <button class="button mail-button" type="submit">Подписаться</button>
                 <label for="mail-data">
                   <span class="visually-hidden">Ввод e-mail для рассылки</span>

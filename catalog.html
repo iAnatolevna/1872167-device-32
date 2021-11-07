@@ -82,68 +82,91 @@
             <h3 class="catalog-title catalog-products-title">фильтр:</h3>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Стоимость</legend>
+                <legend class="catalog-filter-title ">Стоимость</legend>
 
-                <button class="range-toggle  toggle-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену</span>
-                </button>
+                <div class="range">
 
-                <button class="range-toggle  toggle-max" type="button">
-                  <span class="visually-hidden">Изменить максимальную цену</span>
-                </button>
-
-                <label class="catalog-filter-label">от
-                  <input class="catalog-filter-input" type="number" name="min-price" placeholder="50">
-                </label>
-
-                <label class="catalog-filter-label">до
-                  <input class="catalog-filter-input" type="number" name="max-price" placeholder="5000">
-                </label>
+                  <div class="range-scale">
+                    <div class="range-bar" style=" width: 110px; left: 9px">
+                      <button class="range-toggle  toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <label class="catalog-filter-label range-label-min">от
+                        <input class="range-input range-input-min" type="number" value="0" name="min-price"     tabindex="-1">
+                      </label>
+                      <button class="range-toggle  toggle-max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                      <label class="catalog-filter-label range-label-max">до
+                        <input class="range-input range-input-max" type="number" value="5000"  name="max-price"     tabindex="-1">
+                      </label>
+                  </div>
+                </div>
               </fieldset>
 
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Цвет</legend>
+              <fieldset class="catalog-filter-group catalog-filter-group-color">
+                <legend class="catalog-filter-title catalog-filter-title-color">Цвет</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="black" checked>
-                      <span class="control-mark"></span>
+                      <span class="control-mark">
+                        <svg class="checkbox-icon" width="10" height="10" viewBox="0 0 10 10"  xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z"/>
+                          </svg>
+                      </span>
                       <span class="control-label">Черный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="white" checked>
-                      <span class="control-mark"></span>
+                      <span class="control-mark">
+                        <svg class="checkbox-icon" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z"/>
+                        </svg>
+                      </span>
                       <span class="control-label">Белый</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="blue">
-                      <span class="control-mark"></span>
+                      <span class="control-mark">
+                        <svg class="checkbox-icon" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z"/>
+                        </svg>
+                      </span>
                       <span class="control-label">Синий</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="red">
-                      <span class="control-mark"></span>
+                      <span class="control-mark">
+                        <svg class="checkbox-icon" width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z"/>
+                        </svg>
+                      </span>
                       <span class="control-label">Красный</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="visually-hidden control-input" type="checkbox" name="pink">
-                      <span class="control-mark"></span>
+                      <span class="control-mark">
+                        <svg class="checkbox-icon" width="10" height="10" viewBox="0 0 10 10"  xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 0L3.1 6.6L0 3.6V6.9L3.2 10L10 3.3V0Z"/>
+                        </svg>
+                      </span>
                       <span class="control-label">Розовый</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
 
-              <fieldset class="catalog-filter-group">
-                <legend class="catalog-filter-title">Bluetooth</legend>
+              <fieldset class="catalog-filter-group catalog-filter-group-bt">
+                <legend class="catalog-filter-title catalog-filter-title-bt">Bluetooth</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
@@ -199,7 +222,7 @@
               <li class="product-card">
                 <a class="product-card-link" href="#">
                   <img class="product-card-image" src="images/catalog/product-2-profi-selfie-stick.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-                  <h4 class="product-card-title">Профессиональная селфи-палка</h4>
+                  <h4 class="product-card-title">Профессиональная <br>селфи-палка</h4>
                   <b class="product-card-price">1 500 ₽</b>
                 </a>
                 <a class="product-card-button button" href="#">Подробнее</a>
@@ -207,7 +230,7 @@
               <li class="product-card">
                 <a class="product-card-link" href="#">
                   <img class="product-card-image" src="images/catalog/product-3-action-selfie-stick.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-                  <h4 class="product-card-title">Непотопляемая селфи-палка</h4>
+                  <h4 class="product-card-title">Непотопляемая <br>селфи-палка</h4>
                   <b class="product-card-price">2 500 ₽</b>
                 </a>
                 <a class="product-card-button button" href="#">Подробнее</a>
