@@ -339,8 +339,9 @@ body {
 }
 
 .dropdown-catalog {
-    padding-left: 45px;
-    width: 540px;  
+    position: relative;
+    margin-left: 45px;
+    width: 540px;
 }
 
 .main-nav-list {
@@ -392,22 +393,136 @@ body {
     opacity: 0.3;
 }
 
-.dropdown-catalog .main-navigation-link::after {
+.dropdown-catalog-link::before {
     position: absolute;
-    margin-top: -13px;
+    left: 282px;
+    top: 16px;
+    content: "";
+    width: 2px;
+    height: 16px;
+    background: #000000;
+    opacity: 0.2;
+} 
+
+.dropdown-catalog-link {
+    position: relative;
+    z-index: 110;
+}
+
+.dropdown-catalog-link::after {
+    position: absolute;
+    margin-top: -12px;
     margin-left: 17px;
     content: "";
     width: 50px;
     height: 50px;
     background: #FFE17F;
-    background-image: url("../images/icons/plus.svg");
+    background-image: url("../images/icons/minus.svg");
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.2;
     border: 2px solid #000000;
     border-radius: 50%;
     box-sizing: border-box;
+    z-index: 100;
 }
+
+.dropdown-catalog:hover .dropdown-catalog-link::after {
+    opacity: 1;
+}
+
+.dropdown-catalog-link:hover::after {
+    opacity: 1;
+}
+
+.dropdown-catalog:focus-within .submenu {
+    display: block;
+}
+
+.dropdown-catalog-link:hover {
+    text-decoration:none
+}
+
+.dropdown-catalog-link:hover + .submenu {
+    display: block;
+}
+
+.submenu:hover {
+    display: block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    width: 1160px;
+    background-color: #FFE17F;
+    padding-top: 28px;
+    padding-left: 50px;
+    padding-bottom: 46px;
+    z-index: 99;
+    top: 37px;
+    left: -45px;
+    box-sizing: border-box;
+}
+
+.submenu-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.submenu-column-first-wrap {
+    margin-right: 25px;
+}
+
+.submenu-column-second-wrap {
+    margin-right: 39px;
+}
+
+.submenu-column-third-wrap {
+    margin-right: 25px;
+}
+
+.submenu-item {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 6px;
+}
+
+.submenu-link {
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.submenu-link:hover {
+    opacity: 0.6;
+}
+
+.submenu-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #AF4FFF;
+    border-radius: 25px;
+}
+
+.submenu-link:focus(:not(:focus-visible)) {
+    outline: none;
+    box-shadow: none;
+}
+
+.submenu-link:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #AF4FFF;
+    border-radius: 25px;
+}
+
+.submenu-link:active {
+    opacity: 0.3;
+}
+
 
 /* footer */
 .page-footer {
@@ -422,18 +537,18 @@ body {
     width: 1180px;
     margin: 0 auto;
     flex-direction: column;
-  }
+}
 
   .footer-wrapper {
     display: grid;
     grid-template-columns: 250px auto 240px;
     margin-bottom: 39px;
-  }
+}
 
   .footer-social-wrapper {
     display: grid;
     grid-template-columns: auto 240px;
-  }
+}
 
 .footer-logo-link {
     padding: 10px;
@@ -446,7 +561,7 @@ body {
 .page-footer a {
     color: #FFFFFF;
     text-decoration: none;
-  }
+}
 
 .footer-address {
     margin-left: 10px;
@@ -676,6 +791,11 @@ body {
     opacity: 0;
 }
 
+.main-slide:focus-within {
+    opacity: 1;
+    z-index: 2;
+}
+
 .main-slide-active {
     opacity: 1;
     z-index: 1;
@@ -685,6 +805,7 @@ body {
     background: linear-gradient(#FFE17F 150px, #FFFFFF 150px, #FFFFFF 100%);
     background-size: 100%;
     background-repeat: no-repeat;
+    transition: opacity 0.6s ease-in-out;
 }
 
 .slider-wrapper-back::before {
@@ -745,7 +866,7 @@ body {
     font-size: 16px;
 }
 
- .slider-link {
+.slider-link {
     position: relative;
     display: inline-block;
     min-width: 220px;
@@ -1940,7 +2061,7 @@ body {
 
 .sorting-type {
     height: 70px;
-    padding-top: 25px;
+    padding-top: 21px;
     padding-left: 72px;
     display: flex;
     background-color: #EBEBEB;
@@ -1952,11 +2073,16 @@ body {
 }
 
 .sorting-type-title {
-    margin-right: 45px;
+    padding-top: 4px;
+    margin-right: 36px;
+    align-items: flex-start;
+    display: inline-block;
 }
 
 .select-control {
-    padding-right: 12px;
+    height: 30px;
+    display: inline-block;
+    padding: 4px 41px 7px 13px;
     outline: none;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
@@ -1966,6 +2092,30 @@ body {
     border: none;
     background-color: #EBEBEB;
     appearance: none;
+    background-image: url("../images/icons/dropdown.svg");
+    background-repeat: no-repeat;
+    background-size: 11px 6px;
+    background-position: right 15px top 11px;
+}
+
+.select-control:hover {
+    opacity: 0.6;
+}
+
+.select-control:focus {
+    box-shadow: 0 0 0 5px #AF4FFF;
+}
+
+.select-control:focus:not(:focus-visible) {
+    box-shadow: none;
+}
+
+.select-control:focus-visible {
+    box-shadow: 0 0 0 5px #AF4FFF;
+}
+
+.select-control:active {
+    opacity: 0.3;
 }
 
 .batton-sorting-wrapper {
@@ -1985,7 +2135,7 @@ body {
 }
 
 .btn-sorting-min {
-    padding-top: 5px;
+    padding-top: 13px;
     background-position: center;
     background-image: url("../images/icons/sort-up.svg");
     background-size: 11px 10px;
@@ -1997,15 +2147,15 @@ body {
     position: absolute;
     width: 25px;
     height: 25px;
-    top:-7px;
+    top:-5px;
     left: -10px;
     content: "";
     border: solid 5px #AF4FFF;
-    z-index: -1;
+    z-index: 1;
 }
 
 .btn-sorting-max {
-    padding-top: 5px;
+    padding-top: 13px;
     background-position: center;
     background-image: url("../images/icons/sort-down.svg");
     background-size: 11px 10px;
@@ -2017,11 +2167,11 @@ body {
     position: absolute;
     width: 25px;
     height: 25px;
-    top:-7px;
+    top:-5px;
     left: -10px;
     content: "";
     border: solid 5px #AF4FFF;
-    z-index: -1;
+    z-index: 1;
 }
 
 .btn-sorting-active {
@@ -2035,6 +2185,16 @@ body {
 .button-sorting:focus {
     outline: none;
 }
+
+.btn-sorting-min:focus::before {
+    opacity: 1;
+}
+
+.btn-sorting-max:focus::before {
+    opacity: 1;
+}
+
+/*может есть способ как сделать эту долбанную рамку фокуса не вставляя стрелочки как свг?*/
 
 .catalog-filter-button {
     font-size: 18px;
@@ -2183,11 +2343,11 @@ body {
     z-index: -1;
 }
 
-.product-card-link:hover::after {
+.product-card:hover .product-card-link::after {
     opacity: 1;
 }
 
- .product-card-link:hover + .product-card-button {
+.product-card:hover .product-card-button {
     display: inline-block;
 }
 

@@ -39,7 +39,36 @@
         </div>
         <ul class="main-navigation-list">
           <li class="dropdown-catalog">
-            <a class="main-navigation-link" href="catalog.html">Каталог товаров</a>
+            <a class="main-navigation-link dropdown-catalog-link" href="#">Каталог товаров</a>
+            <div class="submenu">
+              <ul class="submenu-list">
+                <div class="submenu-column-first-wrap">
+                  <li class="submenu-item">
+                    <a class="submenu-link" href="#">Виртуальная реальность
+                    </a>
+                  </li>
+                  <li class="submenu-item">
+                    <a class="submenu-link" href="catalog.html">Моноподы для cелфи</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a class="submenu-link" href="#">Экшн-камеры</a>
+                  </li>
+                </div>
+                <div class="submenu-column-second-wrap">
+                  <li class="submenu-item">
+                    <a class="submenu-link" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li class="submenu-item">
+                    <a class="submenu-link" href="#">Умные часы</a>
+                  </li>
+                </div>
+                <div class="submenu-column-third-wrap">
+                <li class="submenu-item">
+                  <a class="submenu-link" href="#">Квадрокоптеры</a>
+                </li>
+                </div>
+              </ul>
+            </div>
           </li>
           <li class="main-nav-item">
             <ul class="main-nav-list">
@@ -198,11 +227,11 @@
                   <option value="price-min">Сначала подешевле</option>
                   <option value="price-max">Сначала подороже</option>
                 </select>
-                <button class="visually-hidden" type="submit">Отсортировать товары</button>
+                <button class="visually-hidden" type="submit" tabindex="-1">Отсортировать товары</button>
               </form>
               <div class="batton-sorting-wrapper">
                 <a href="#" class="button-sorting btn-sorting-min">
-                  <span class="visually-hidden">от минимального</span>
+                  <span class="visually-hidden btn-min">от минимального</span>
                 </a>
                 <a href="#" class="button-sorting btn-sorting-max btn-sorting-active">
                   <span class="visually-hidden">от максимального</span>
