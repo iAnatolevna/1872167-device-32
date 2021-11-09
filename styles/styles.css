@@ -406,7 +406,7 @@ body {
 
 .dropdown-catalog-link {
     position: relative;
-    z-index: 110;
+    z-index: 15;
 }
 
 .dropdown-catalog-link::after {
@@ -424,7 +424,7 @@ body {
     border: 2px solid #000000;
     border-radius: 50%;
     box-sizing: border-box;
-    z-index: 100;
+    z-index: 14;
 }
 
 .dropdown-catalog:hover .dropdown-catalog-link::after {
@@ -459,7 +459,7 @@ body {
     padding-top: 28px;
     padding-left: 50px;
     padding-bottom: 46px;
-    z-index: 99;
+    z-index: 13;
     top: 37px;
     left: -45px;
     box-sizing: border-box;
@@ -921,7 +921,7 @@ body {
     align-items: center;
     width: 560px;
     height: 560px;
-    z-index: 20;    
+    z-index: 11;    
     cursor: pointer;
 }
 
@@ -971,7 +971,7 @@ body {
     position: absolute;
     right: 63px;
     top: 349px;
-    z-index: 20;
+    z-index: 11;
 }
 
 .slider-pagination-item {
@@ -2502,3 +2502,191 @@ body {
     background-repeat: no-repeat;
 }
 
+/*popover*/
+.popover {
+    position: absolute;
+    top: 43px;
+    right: -68px;
+    z-index: 16;
+    width: 320px;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #000000;
+    min-height: 250px;
+    box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+  
+.popover::before{
+    content: "";
+    width: 14px;
+    height: 6px;
+    top: -6px;
+    left: 151px;
+    background-image: url("../images/icons/triangle.svg");
+    position: absolute;
+}
+
+.popover-open {
+    display: block;
+  }
+
+.popover-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-items-list {
+    padding: 0;
+    margin: 0;
+}
+
+.cart-item {
+    padding: 20px 13px 19px 20px;    
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cart-link {
+    margin-right: 18px;
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+}
+
+.cart-link:hover .product-title {
+    color:rgba(255, 255, 255, 0.6);
+}
+
+.cart-link:focus {
+    outline: none;
+}
+
+/* .cart-link:focus .product-image {
+    box-shadow: 0 0 0 5px #AF4FFF;
+}
+
+.cart-link:focus .product-title {
+   color: #AF4FFF;
+}
+
+.cart-link:focus:not(:focus-visible) .product-image {
+    box-shadow: none;
+} */
+
+.cart-link:focus-visible {
+    outline: none;
+}
+
+.cart-link:focus-visible .product-image {
+    box-shadow: 0 0 0 5px #AF4FFF;
+}
+
+.cart-link:focus-visible .product-title {
+   color: #AF4FFF;
+}
+
+.cart-link:active .product-title {
+    color:rgba(255, 255, 255, 0.3);
+}
+
+.product-image {
+    margin-right: 23px;
+}
+
+.product-title {
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.cart-item-button {
+    align-self: flex-start;
+    width: 25px;
+    height: 25px;
+    background-color: #000000;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: none;
+    background-image: url("../images/icons/delete-white.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 11px 11px;
+}
+
+.cart-item-button:hover {
+    opacity: 0.6;
+}
+
+.cart-item-button:focus {
+    outline: none;
+    border: 2px solid #AF4FFF;
+}
+
+.cart-item-button:focus:not(:focus-visible) {
+    outline: none;
+    border: none;
+}
+
+.cart-item-button:focus-visible {
+    outline: none;
+    border: 2px solid #AF4FFF;
+}
+
+.cart-item-button:active {
+    opacity: 0.3;
+}
+
+.total-wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1A1A1A;
+    min-height: 44px;
+}
+
+.popover-link {
+    margin: 20px;
+    width: 280px;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.popover-link:hover {
+    background-color: #FFE17F;
+}
+
+.popover-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px #AF4FFF;
+}
+
+.popover-link:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+}
+
+.popover-link:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 5px #AF4FFF;
+}
+
+.popover-link:active {
+    color:rgba(0, 0, 0, 0.3);
+    background-color: #FFE17F;
+}
