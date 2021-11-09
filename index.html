@@ -324,7 +324,7 @@
             </div>
             <div class="index-columns page-position">
               <form class="mail-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="mail-input" type="text" id="mail-data" name="mail-data" placeholder="Ваш e-mail" required>
+                <input class="mail-input" type="email" id="mail-data" name="mail-data" placeholder="Ваш e-mail" required>
                 <button class="button mail-button" type="submit">Подписаться</button>
                 <label for="mail-data">
                   <span class="visually-hidden">Ввод e-mail для рассылки</span>
@@ -399,6 +399,57 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container">
+      <div class="modal modal-delivery">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="form-label" for="user-name-data">Ваше имя:
+              <input class="form-input user-name-input" type="text" id="user-name-data" name="user-name" placeholder="Имя Фамилия">
+              <span class="form-postscript error-modal-text">Пожалуйста, представьтесь</span>
+            </label>
+            <label label class="form-label"  for="delivery-mail-data">Ваш e-mail:
+              <input class="form-input delivery-mail-input" type="email" id="delivery-mail-data" name="delivery-mail" placeholder="Введите e-mail" required>
+              <span class="form-postscript">Забавный у вас адрес</span>
+            </label>
+            <label class="form-label" for="comment-data">Что нужно привезти:
+              <textarea class="form-textarea comment-textarea form-input" type="text" id="comment-data" name="comment" placeholder="В свободной форме"></textarea>
+            </label>
+            <div class="counter-wrap">
+              <label class="counter-label form-label" for="counter-input">Количество:</label>
+              <button class="counter-info" type="button"></button>
+              <div class="popover popover-info">
+                <div class="popover-content">
+                  <h2 class="visually-hidden">Дополнительная информация</h2>
+                  <span>Постараемся найти, сколько нужно. Привезём сколько получится по требованиям 
+                    к&nbsp;провозу багажа.</span>                
+                </div>
+            </div>
+
+              <div class="counter-number">
+                <button class="counter-button counter-minus" type="button">
+                  <svg class="counter-button-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H0V9H16V7Z"/>
+                    </svg>
+                </button>
+                <button class="counter-button counter-plus" type="button">
+                  <svg class="counter-button-icon"  width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z"/>
+                    </svg>
+                </button>                              
+                <input class="form-input counter-input" type="number" id="counter-input" name="amount" placeholder="1" tabindex="-1">
+              </div>
+            </div>
+
+            <button class="button catalog-filter-button button-modal" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
+    </div>
 
   </body>
 </html>

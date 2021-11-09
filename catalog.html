@@ -121,13 +121,13 @@
                         <span class="visually-hidden">Изменить минимальную цену</span>
                       </button>
                       <label class="catalog-filter-label range-label-min">от
-                        <input class="range-input range-input-min" type="number" value="0" name="min-price"     tabindex="-1">
+                        <input class="range-input range-input-min" type="number" min="0" max="50000" value="0" name="min-price"     tabindex="-1">
                       </label>
                       <button class="range-toggle  toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену</span>
                       </button>
                       <label class="catalog-filter-label range-label-max">до
-                        <input class="range-input range-input-max" type="number" value="5000"  name="max-price"     tabindex="-1">
+                        <input class="range-input range-input-max" type="number"  min="0" max="100000" value="5000"  name="max-price"     tabindex="-1">
                       </label>
                   </div>
                 </div>
@@ -231,9 +231,15 @@
               </form>
               <div class="batton-sorting-wrapper">
                 <a href="#" class="button-sorting btn-sorting-min">
+                  <svg class="sorting-icon" width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 0L11 10H0"/>
+                  </svg>
                   <span class="visually-hidden btn-min">от минимального</span>
                 </a>
                 <a href="#" class="button-sorting btn-sorting-max btn-sorting-active">
+                  <svg class="sorting-icon" width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 10L0 0H11"/>
+                  </svg>
                   <span class="visually-hidden">от максимального</span>
                 </a>
               </div>
