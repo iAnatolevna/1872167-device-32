@@ -1390,7 +1390,7 @@ img {
   left: 0;
   content: "";
   width: 125px;
-  height: 100px;
+  height: 100%;
   background-color: #ffe17f;
 }
 
